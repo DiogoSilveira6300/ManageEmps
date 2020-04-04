@@ -6,10 +6,11 @@ pipeline {
 	}
 	stages {
 		stage('test java installation') {
-		steps {
-			sh 'java -version'
+			steps {
+				sh 'java -version'
+				}
 			}
-		}stage('test maveninstallation') {
+		stage('test maven installation') {
 			steps {
 				sh 'mvn -version'
 				}
