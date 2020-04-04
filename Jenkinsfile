@@ -1,8 +1,10 @@
 pipeline {
-	agent anytools {
+	agent any
+	tools {
 		jdk 'jdk8'
 		maven 'mv3'
-	}stages {
+	}
+	stages {
 		stage('test java installation') {
 		steps {
 			sh 'java -version'
