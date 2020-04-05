@@ -1,5 +1,7 @@
 package tqsdemo.employeemngr.employee;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -17,6 +19,11 @@ class EmployeeRepositoryTest {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
+    @Test
+    private void failingTest(){
+        fail("a failing test: should be disabled");
+    }
 
     @Test
     public void whenFindByName_thenReturnEmployee() {
