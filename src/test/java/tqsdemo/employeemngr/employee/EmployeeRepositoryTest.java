@@ -21,7 +21,7 @@ class EmployeeRepositoryTest {
     private EmployeeRepository employeeRepository;
 
     @Test
-    private void failingTest(){
+    public void failingTest(){
         fail("a failing test: should be disabled");
     }
 
